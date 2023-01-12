@@ -1,0 +1,62 @@
+/*     -----     Set up, reset, and variables     -----     */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: hsl(216,3%,66%);
+  --nyce: hsl(186,13%,45%);
+}
+
+/* This is for only testing and outlines everyting in pink so I can see what's what, safely ignore */
+/* * { border: 1px pink solid} */
+
+
+/*     -----     Main Block Elements     -----     */
+
+body {
+  background-color: var(--nyce);
+  background-image: url("mountains.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-blend-mode: multiply;
+  font-family: 'Roboto Light', sans-serif;
+}
+
+.logo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  scale: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    scale: 0.4;
+  }
+}
+
+.logo-spacer {
+  height: 6rem;
+}
+
+footer {
+  width: 100%;
+  padding: 3rem;
+  background-color: var(--nyce);
+  color: var(--grey);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
