@@ -19,7 +19,7 @@
 /*     -----     Main Block Elements     -----     */
 
 body {
-  background-color: var(--nyce);
+  background-color: hsl(186,13%,45%);
   background-image: url("mountains.jpg");
   background-repeat: no-repeat;
   background-position: right top;
@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,6 +49,8 @@ body {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   padding: 3rem;
   background-color: var(--nyce);
