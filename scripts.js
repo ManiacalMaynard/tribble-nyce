@@ -6,8 +6,11 @@ let hue = 186;
 // document.body.style.backgroundColor = "hsl("+ hue + ",15%,45%)"
 
 const doit = () => {
-  hue++
+  hue < 360 ?
+  hue++ :
+  hue = 0 ;
   document.body.style.backgroundColor = "hsl("+ hue + ",13%,45%)"
+  console.log(hue)
 }
 
 setInterval(doit, 200)
