@@ -28,24 +28,30 @@ body {
 }
 
 .logo {
-  height: 80vh;
+  height: 85vh;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
 
-.logo {
+.logo > img {
   scale: 0.5;
 }
 
 @media screen and (max-width: 600px) {
-  .logo {
+  .logo > img {
     scale: 0.4;
   }
 }
 
-.logo-spacer {
-  height: 6rem;
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--nyce);
+  font-weight: 600;
+  font-style: italic;
 }
 
 footer {
