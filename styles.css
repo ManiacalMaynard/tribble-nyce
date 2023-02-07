@@ -50,8 +50,8 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--nyce);
+  font-size: 0.8rem;
   font-weight: 600;
-  font-style: italic;
 }
 
 footer {
